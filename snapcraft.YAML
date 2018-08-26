@@ -11,3 +11,6 @@ parts:
     source: https://github.com/kocicjelena/statusnap.git
     source-tag: v1.1.3
     plugin: python
+  gnu-hello:
+    source: http://ftp.gnu.org/gnu/hello/hello-2.10.tar.gz
+    plugin: autotools
