@@ -7,17 +7,10 @@ grade: stable
 confinement: devmode
 apps:
   statusnap:
-    command: bin/statusnap
+    command: status
     plugin: python
 
 parts:
-  gnu-hello:
-    source: http://ftp.gnu.org/gnu/hello/hello-2.10.tar.gz
-    plugin: autotools 
-  gnu-bash:
-      source: http://ftp.gnu.org/gnu/bash/bash-4.3.tar.gz
-      plugin: autotools
-      configflags: ["--infodir=/var/bash/info"]
   statusnap:
       source: https://github.com/kocicjelena/statusnap.git
       source-tag: v1.1.3
