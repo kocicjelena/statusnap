@@ -6,7 +6,8 @@ description: |
 grade: stable
 confinement: devmode
 parts:
-  httpstat:
+  statusnap:
+    command: bin/statusnap
     source: https://github.com/kocicjelena/statusnap.git
     source-tag: v1.1.3
     plugin: python
