@@ -8,12 +8,10 @@ confinement: devmode
 apps:
   statusnap:
     command: status
-    plugin: python
 
 parts:
   statusnap:
       source: https://github.com/kocicjelena/statusnap.git
-      source-tag: v1.1.3
-      plugin: python
+      lugin: python
   
 
