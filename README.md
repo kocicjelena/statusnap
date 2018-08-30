@@ -21,6 +21,13 @@ snap install docker
 
 sudo docker run -v $(pwd):/statusnap snapcore/snapcraft sh -c "apt update && cd /statusnap ^& snapcraft"
 
+docker pull kjelenak/statusnap
+
+
+Further consideration:
+
+(Travis deployment, .travis for snap using docker)
+
 sudo apt install ruby-dev
 export GEM_HOME=$HOME/gems
 export PATH=$PATH:$GEM_HOME/bin
@@ -49,4 +56,4 @@ sudo: required
 
 
 	$ snapcraft enable-ci travis --refresh
-  snap install statusnap-kocicjelena --edge
+
